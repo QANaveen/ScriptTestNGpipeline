@@ -14,7 +14,7 @@ pipeline {
             bat 'mvn -f C:\\Users\\User\\.jenkins\\workspace\\TestNG1\\FreeStyleTestNG clean test package'
             }
         }
-         stage('Build')
+         stage('mail')
         {
             steps
             {
