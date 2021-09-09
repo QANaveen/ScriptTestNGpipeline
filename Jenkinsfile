@@ -18,7 +18,7 @@ pipeline {
         {
             steps
             {
-             emailext body: 'Pipeline is success', subject: 'TestNG report', to: 'snaveenkpn@gmail.com'
+             emailext body: 'readFile ("C:\\Users\\User\\.jenkins\\workspace\\TestNG1\\FreeStyleTestNG\\target\\surefire-reports\\emailable-report.html")', subject: 'TestNG Result', to: 'snaveenkpn@gmail.com'
             }
         }
         
