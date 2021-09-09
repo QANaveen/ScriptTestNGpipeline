@@ -14,6 +14,13 @@ pipeline {
             bat 'mvn -f C:\\Users\\User\\.jenkins\\workspace\\TestNG1\\FreeStyleTestNG clean test package'
             }
         }
+         stage('Build')
+        {
+            steps
+            {
+             emailext body: 'Pipeline is success', subject: 'TestNG report', to: 'snaveenkpn@gmail.com'
+            }
+        }
         
     }
 }
